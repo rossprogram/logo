@@ -1,18 +1,19 @@
 \documentclass[tikz,border=5pt]{standalone}
 \usetikzlibrary{decorations.text}
 \usepackage{dsfont}
+\usepackage{graphicx}
 \begin{document}
 \begin{tikzpicture}
-\draw[color=black] (0,0) node {\scalebox{4}{\Huge $\mathds{Z}$}};
-%\node at (0,-1.5) {\large\bfseries\color{gray} {$\mathbf{50}^{\mbox{\scriptsize th}}$ Anniversary}};
-\draw[color=black] (0,0) circle (2.85cm);
+%\draw[color=black] (0,0) node {\scalebox{4}{\Huge $\mathds{Z}$}};
+\draw[color=black] (0,0) node {\includegraphics{blackboard-bold-integers.pdf}};
+%\node at (0,-1.65) {\large\bfseries\color{gray} {$\mathbf{60}^{\mbox{\scriptsize th}}$ Anniversary}};
+\draw[color=black] (0,0) circle (2.95cm);
 
 \path
     [
         postaction={
             decorate,
             decoration={
-                raise=-7pt,
                 text along path,
                 text align/fit to path stretching spaces=true,
                 reverse path=false,
@@ -23,7 +24,24 @@
             }
         }
     ]
-(0,0) ++(205:2.35cm) arc (205:-25:2.35cm);
+(0,0) ++(215:2.20cm) arc (215:-35:2.20cm);
+
+\path
+    [
+        postaction={
+            decorate,
+            decoration={
+                text along path,
+                text align/fit to path stretching spaces=true,
+                reverse path=false,
+                text align/align=center,
+                text align/left indent={0cm},
+                text align/right indent={0cm},
+                text={|\Huge|Ross Mathematics Program}
+            }
+        }
+    ]
+(0,0) ++(215:2.20cm) arc (215:-35:2.20cm);
 
 \end{tikzpicture}
 \end{document}

@@ -13,4 +13,4 @@ logo.svg: logo.pdf
 	pdf2svg logo.pdf logo.svg
 
 logo.png: logo.pdf
-	mudraw -r100 -o logo.png -c rgba logo.pdf  
+	mutool draw -r100 -o logo.png -c rgba logo.pdf  
