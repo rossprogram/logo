@@ -1,13 +1,13 @@
-\documentclass[tikz,border=5pt]{standalone}
+\documentclass[tikz,margin=2pt]{standalone}
 \usetikzlibrary{decorations.text}
 \usepackage{dsfont}
 \usepackage{graphicx}
 \begin{document}
 \begin{tikzpicture}
-%\draw[color=black] (0,0) node {\scalebox{4}{\Huge $\mathds{Z}$}};
-\draw[color=black] (0,0) node {\includegraphics{blackboard-bold-integers.pdf}};
+\draw[color=black] (0,0) node {\scalebox{4}{\Huge $\mathds{R}$}};
+%\draw[color=black] (0,0) node {\includegraphics{blackboard-bold-integers.pdf}};
 %\node at (0,-1.65) {\large\bfseries\color{gray} {$\mathbf{60}^{\mbox{\scriptsize th}}$ Anniversary}};
-\draw[color=black] (0,0) circle (2.95cm);
+\draw[color=black,line width=2pt] (0,0) circle (2.95cm);
 
 \path
     [
@@ -20,7 +20,7 @@
                 text align/align=center,
                 text align/left indent={0cm},
                 text align/right indent={0cm},
-                text={|\Huge|Ross Mathematics Program}
+                text={|\Huge\color{black}|Ross Mathematics Program}
             }
         }
     ]
@@ -37,7 +37,7 @@
                 text align/align=center,
                 text align/left indent={0cm},
                 text align/right indent={0cm},
-                text={|\Huge|Ross Mathematics Program}
+                text={|\Huge\color{black}|Ross Mathematics Program}
             }
         }
     ]
